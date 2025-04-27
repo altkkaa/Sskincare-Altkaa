@@ -1,0 +1,330 @@
+<!DOCTYPE HTML>
+<HTML lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=devise-width, initial scale=1"/>
+<title>Sskincare</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+color: #333;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: #fbe5de;
+border-bottom: 2px solid #aa6f73;
+}
+.logo {
+display: block;
+}
+.nav-links {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+.nav-links a {
+text-decoration: none;
+color: #aa6f73;
+font-size: 16px;
+font-weight: bold;
+}
+.nav-links a:hover {
+color: #7a4b4f;
+}
+.container {
+padding: 20px;
+}
+.product-section {
+margin-bottom: 40px;
+text-align: center;
+}
+.product img {
+border-radius: 10px;
+margin-bottom: 15px;
+}
+.product p {
+font-size: 16px;
+color: #555;
+margin-bottom: 15px;
+}
+.btn {
+display: inline-block;
+background-color: #aa6f73;
+color: white;
+padding: 10px 20px;
+text-decoration: none;
+border-radius: 5px;
+font-size: 16px;
+}
+.btn:hover {
+background-color: #7a4b4f;
+}
+.footer {
+background-color: #fbe5de;
+color: #7a4b4f;
+padding: 20px;
+text-align: center;
+border-top: 2px solid #aa6f73;
+}
+.footer-container {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;
+margin-bottom: 20px;
+}
+.footer-about,
+.footer-links,
+.footer-social {
+flex: 1;
+min-width: 200px;
+}
+.footer h3 {
+font-size: 18px;
+margin-bottom: 10px;
+}
+.footer p {
+font-size: 14px;
+line-height: 1.5;
+}
+.footer-links ul {
+list-style: none;
+padding: 0;
+}
+.footer-links ul li {
+margin: 5px 0;
+}
+.footer-links ul li a {
+text-decoration: none;
+color: #aa6f73;
+}
+.footer-links ul li a:hover {
+color: #7a4b4f;
+}
+.footer-social a {
+text-decoration: none;
+color: #aa6f73;
+margin: 0 5px;
+}
+.footer-social a:hover {
+color: #7a4b4f;
+}
+.footer-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.footer-container div {
+margin: 10px;
+}
+
+.footer-container h3 {
+color: #444;
+font-size: 16px;
+}
+
+.footer-container p {
+font-size: 14px;
+}
+.footer-bottom {
+font-size: 14px;
+margin-top: 10px;
+}
+#searchBtn {
+background-color: #aa6f73;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+#searchBtn:hover {
+background-color: #7a4b4f;
+}
+
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 20px;
+}
+
+.big {
+margin: 15px;
+text-align: center;
+}
+
+.product-info {
+margin-bottom: 20px;
+text-align: center;
+}
+
+h1 {
+margin: 10px 0;
+color: #444;
+}
+
+button {
+background-color: #eee;
+border: 1px solid #ccc;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+margin-top: 10px;
+}
+
+button:hover {
+background-color: #ddd;
+}
+
+
+#sgsbtn {
+background-color: #aa6f73;
+color: white;
+border: none;
+padding: 8px 12px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+.footer-social a:hover {
+background-color: #ddd;
+}
+.header {
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    z-index: 1000; 
+}
+.logo img {
+    transition: opacity 0.3s; 
+}
+
+.logo img:hover {
+    opacity: 0.7;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo">
+ <a href="index.html"><img src="https://i.imgur.com/v35Kj1J.jpeg" alt="Sskincare Logo" width="80" height="80">
+        </div>
+<nav class="nav-links">
+<a href="advise.html">Get an Advice</a>
+<a href="aboutus.html">About Us</a>
+<button id="searchBtn" onclick="searching()">🔍 Search</button>
+<a href="basket.html" class="basket">
+🛒 Basket (<span id="basket-count">0</span>)
+</a>
+</nav>
+</div>
+
+
+<div class="container">
+<div class="product-info">
+<div class="big">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzz4t27JAIKHTw-ubKrXTExre6ag9uIZHt5g&s"
+alt="cushion"
+width="100px"
+height="100px"/>
+</div>
+Cushion
+<h1>$20</h1>
+<button id="sgsbtn">Сагслах</button>
+</div>
+
+<div class="product-info">
+<div class="big">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYTgfi-LONM5raSWdez3YgLeY7TPEf0SMamw&s"
+alt="eyeshadow"
+width="100px"
+height="100px"/>
+</div>
+Eyeshadow pallete
+<h1>$25</h1>
+<button id="sgsbtn">Сагслах</button>
+</div>
+
+<div class="product-info">
+<div class="big">
+<img src="data:image/jpeg;base64,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"
+alt="powder"
+width="100px"
+height="100px"/></div>
+Powder
+<h1>$20</h1>
+<button id="sgsbtn">Сагслах</button>
+</div>
+
+<div class="product-info">
+<div class="big">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhMTExIVFhMXFxsYGRUXFxoYFxYXFxkYGBcYGBUYICggGBolGxUVITEhJSkrLi4uGB8zODMtNygtMCsBCgoKDg0OGhAQGy0lHyUtLS8vLS0tLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAAAwQFAgEGB//EADgQAAEDAgQDBgQGAgIDAQAAAAEAAhEDIRIxQVEEImEFcYGRofATMrHBBlJi0eHxI0IzkrLC0iT/xAAYAQEAAwEAAAAAAAAAAAAAAAAAAQIDBP/EACIRAQEAAgICAgMBAQAAAAAAAAABAhEDITFBElEiMmFxE//aAAwDAQACEQMRAD8A/cUREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERARFw+oBqg7RVanE7D+VZaZEjJRLKm42PURFKBERARcueAo6lU9yjaZLUrnAZrmlVDpjSyoGvJjX+Yt6ea64apD75Ot4jL7qvy7a/8ALpoIiK7EREQEXL6gGZ99yrVONGglFpjb4W1w+qBmVQqV3HX7e9VG10+8u9RtecX21GPBAIyN10qXZtSzm7GR3Ov9ZV1SplNXQiIioiIgIvHOhQP4nZRcpEzG1YUT64HVVajyTcqHiKhGQn3fxWd5PppOP7WKtc20mwUTyoywuIFi6ZysADbu0v3r17YzOseJ9VS21pJI6FSBJ2nuVrgn2Ldj6HL7jwVIR4ffO66o1YeDp8pPfEfUKcbqoym41EXNR0CVU+MT0C2t0xxwtWX1gFDU4jewVWq69tPd/eihqOnlzIB0ynfb0Kpcm2PFFjjKluTOLRvv1yKjqcTIBsDtNut9bz5KtSp2wgAuIjEY83HWBPer9OkxoGGDucyVHdaWTFU18InT+rBevmSe6N95Oxv/AHp2x5IDiIm8bToeq9rC1tcN+hP1iR4KFt9tOjUxNB39leueBmVR7MqRLNBl5D9wpeKbed1rL05bhrLSR3E7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"
+alt="highlighter"
+width="100px"
+height="100px"/>
+</div>
+ Highlighter
+<h1>$12</h1>
+<button id="sgsbtn">Сагслах</button>
+</div>
+
+<div class="product-info">
+<div class="big">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwaZYKNPcTJYMH_XxuTgzK-wP67qP6xy_QHg&s"
+alt="eyeliner"
+width="100px"
+height="100px"/>
+</div>
+Eyeliner
+<h1>$5</h1>
+<button id="sgsbtn">Сагслах</button>
+</div>
+
+
+</div>
+<footer class="footer">
+<div class="footer-container">
+<div class="footer-about">
+<h3>Location</h3>
+<p>Khan-Uul 23 district Tomyo School of UB, Ulaanbaatar,Mongolia</p>
+</div>
+<div class="footer-links">
+<h3>Quick Links</h3>
+<ul>
+<li><a href="advise.html">Get an Advice</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</div>
+<div class="footer-social">
+<h3>Follow Us</h3>
+<a href="https://www.instagram.com/nolucelight" target="_blank">Instagram</a></li>|
+<a href="https://www.facebook.com/Tso Ko" target="_blank">Facebook</a></li>|
+<a href="https://twitter.com" target="_blank">Twitter</a>
+</div>
+</div>
+<footer>
+<div class="footer-container">
+<div class="footer-location">
+</div>
+</div>
+<div class="footer-bottom">
+<p>&copy; 2025 Sskincare. All rights reserved.</p>
+</div>
+</footer>
+</div>
+
+</body>
+</HTML>
